@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 45px 60px;
+}
+
+#nav-part1{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+#nav-part2{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+
+#nav h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#nav h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#content{
+    margin-top: 60px;
+    padding: 40px 65px;
+}
+
+#content h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#content h1{
+    font-size: 140px;
+    word-spacing: 12px;
+    letter-spacing: -8px;
+    line-height: 120px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+#case{
+    padding: 40px 65px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#case h4{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#case h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#line{
+    height: 2px;
+    width: 120px;
+    background: #000;
+}
+
+#projects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 65px;
+    gap: 80px;
+}
+
+.elem{
+    width: 50%;
+}
+
+.elem-img{
+    height: 720px;
+    width: 100%;
+    border-radius: 30px;
+    background: rgb(129, 182, 233);
+    background-size: cover;
+    background-position: center;
+}
+
+#img1{
+    background-image: url(img1.avif);
+}
+
+#img2{
+    background-image: url(img2.avif);
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.bottom i{
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.bottom i:hover{
+    background: #000;
+    color: #fff;
+}
+
+.bottom h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.bottom h4{
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: #696969f3;
+}
