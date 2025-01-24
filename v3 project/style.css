@@ -7,6 +7,14 @@
     --dcyan: #1f2f32;
 }
 
+body{
+    transition: background-color ease-out .5s;
+}
+
+.vdodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
 *::selection{
     background: var(--salmon);
 }
