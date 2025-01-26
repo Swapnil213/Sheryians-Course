@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*::selection {
+  background: #000;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  padding: 0 4vw;
+  padding-top: 25vh;
+}
+
+#page1 h1 {
+  font-size: 15vw;
+  line-height: 12vw;
+  letter-spacing: -1.5vw;
+}
+
+#image-container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#image-container img {
+  height: 120%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1.05;
+}
+
+#image-container #play {
+  padding: 2.5vw 2vw;
+  background: #000;
+  color: #fff;
+  font-size: 1vw;
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0;
+}
+
+#page2 {
+  min-height: 100%;
+  width: 100%;
+  padding: 3vw 1vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#page2 .elem {
+  height: 100%;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+#page2 .elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.elem .details{
+    height: 50px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(146, 146, 88, 0.556);
+    z-index: 9;
+    border-radius: 50px;
+}
+
+@media (max-width: 600px) {
+  #page1 {
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    padding: 0 2vw;
+    padding-top: 25vh;
+  }
+  #image-container {
+    height: 25vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3vw;
+  }
+
+  #image-container img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.05;
+  }
+
+  #image-container #play {
+    padding: 9vw 7vw;
+    background: #000;
+    color: #fff;
+    font-size: 6vw;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 3;
+    opacity: 1;
+    scale: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 5vw 3vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #page2 .elem {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 3vw;
+  }
+
+  #page2 .elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
